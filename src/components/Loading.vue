@@ -22,6 +22,11 @@ function increment() {
 }
 
 onMounted(() => {
+  if (sessionStorage.getItem('showLoading') === 'true') {
+    emit('onTimeout')
+  } else {
+    sessionStorage.setItem('showLoading', true)
+  }
   interval = setInterval(() => {
     increment()
   }, 100)

@@ -7,6 +7,9 @@ const path = require('path')
 export default defineConfig({
   plugins: [vue()],
   base: './',
+  server: {
+    host: 'local.yuanfudao.biz',
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
