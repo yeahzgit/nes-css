@@ -20,8 +20,8 @@ import 'nes.css/css/nes.min.css';
   src: url('./assets/start2p.ttf') format('truetype');;
 }
 .home {
-  font-family: 'z-pix' !important;
-  /* font-family: 'start-2p' !important; */
+  /* font-family: 'z-pix' !important; */
+  font-family: 'start-2p' !important;
   font-weight: bold ;
   font-size: 14px;
 }
